@@ -1,0 +1,249 @@
+/* clearfix */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+html body {
+    margin: 0;
+    padding: 0;
+    background-color: #111f20;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #eaeaea;
+    font-weight: normal;
+}
+
+/* header style */
+
+.dimi-portfolio-main-header {
+    height: 640px;
+    background-image: url("programing-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100%;
+    max-width: 1350px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height:80px;
+    /* background-color: rgba(255, 255, 255, 0.2); */
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0px 10px 21px 13px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 10px 21px 13px rgba(0,0,0,0.75);
+    box-shadow: 0px 10px 21px 13px rgba(0,0,0,0.75);
+}
+
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav ul {
+    height: inherit;
+    width: 500px;
+    margin: 0 auto;
+}
+
+nav ul li {
+    display: block;
+    height: inherit;
+    float: left;
+    /* border: 1px solid white; */
+    border-right: 2px solid #1f1f1f;
+
+}
+nav ul:first-child {
+    border-left: 2px solid #1f1f1f;
+}
+
+nav ul li a {
+    text-decoration: none;
+    /* color: #eaeaea; */
+    color: #eaeaea;
+    font-size: 19px;
+    display: block;
+    height: inherit;
+    padding:0 33px 0 33px;
+    transition: all ease 0.3s;
+    
+    
+}
+nav ul li a span {
+    color: #eaeaea;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+
+nav ul li a:hover span {
+    /* color: #13f3ff; */
+    color: #fff;
+}
+
+nav ul li a span {
+    position: relative;
+    display: block;
+    top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+nav ul li a:visited {
+    color: #eaeaea;
+}
+
+h1 {
+    color: #eaeaea;
+    font-weight: normal;
+    font-size: 90px;
+    text-align: center;
+    margin: 0;
+    padding-top: 235px;
+
+}
+
+/* main section styling */
+
+main {
+    width: 100%;
+    max-width: 1350px;
+}
+
+main h2 {
+    text-align: center;
+    margin-top: 50px;
+    padding: 100px 0 30px 0;
+    font-style: italic;
+    font-size: 27px;
+}
+
+/* About me - section style */
+
+#dimi-portfolio-about-me  {
+    box-sizing: border-box;
+    padding: 20px 50px;
+    width: 100%;
+}
+
+#dimi-portfolio-about-me p {
+    font-size: 22px;
+    text-align: center;
+}
+
+/* portfolio section syle */
+
+main section article {
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 10px;
+    float: left;
+    min-height: 500px;
+    
+}
+
+main section article a {
+    display: block;
+    
+}
+
+main section article a img {
+    max-width: 100%;
+}
+
+main section article h3 {
+    text-align: center;
+}
+
+main section article p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.itallic-link {
+    font-style: italic;
+    text-decoration: none;
+    display: inline;
+    color: #2296a3;
+}
+
+.itallic-link:visited {
+    color: #2296a3;
+}
+
+
+/* contact form section */
+
+
+.two-colums {
+    float: left;
+    width: 50%;
+    padding: 30px 50px;
+    min-height: 1000px;
+    box-sizing: border-box;
+}
+
+/* mine-contact-informations */
+
+.milos-dimitrijevic-info p {
+    font-size: 22px;
+}
+
+.milos-dimitrijevic-info p span {
+    color: #2296a3;
+}
+
+
+
+
+
+
+/* contac-form */
+
+.form-wrapper form p {
+    font-size: 18px;
+}
+
+.form-wrapper form input {
+    padding: 5px;
+    width: 70%;
+    height: 30px;
+    font-size: 18px;
+    color: #f3f3f3;
+    background-color: #192021;
+    text-align: center;
+}
+
+.form-wrapper form input:focus {
+    outline: none;
+}
+
+.form-wrapper form .text-message {
+    height: 90px;
+}
+    
+
+.form-wrapper form button {
+    padding: 15px 30px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+
+
+
