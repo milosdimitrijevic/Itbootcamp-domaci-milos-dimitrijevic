@@ -7,7 +7,7 @@ function maxNumber(num1,num2,num3){
         return num3;
     }
     else{
-        return "Neki brojevi su jednaki"
+        return "Error";
     }
 }
 
