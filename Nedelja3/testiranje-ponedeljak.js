@@ -49,8 +49,11 @@ console.log(' '.repeat(n-1)+'*');
 }
 // zadatak 4 
 {
-    let novDatum = new Date();
-    console.log(novDatum);
+    function daysInMonth (month, year) {
+        return new Date(year, month, 0).getDate();
+    }
+    console.log(daysInMonth(11,2019)); // 31
+    
 }
 
 
