@@ -32,10 +32,20 @@ submitNow.forEach(submitbutton => {
 const messageId = "message";
 
 
+let dateTimeNow = new Date();
+    console.log(dateTimeNow);
+    let date = dateTimeNow.getDate();
+    let hours = dateTimeNow.getHours();
+    let minutes = dateTimeNow.getMinutes();
+
 function checkOrder(){
     if(pizzaCount==0){
         document.getElementById(messageId).innerHTML = "Greska!!! Niste narucili ni jednu picu.";
     } else if(pizzaCount>0){
-        document.getElementById(messageId).innerHTML = ``;
+        document.getElementById(messageId).innerHTML = `Narucili ste ${pizzaCount} pica. ${date}${hours}${minutes}`;
+        pizzaCount = 0;
+        pizzaCounterBadge.innerHTML = pizzaCount;
+    }else {
+        console.log("Error message");
     }
 }
