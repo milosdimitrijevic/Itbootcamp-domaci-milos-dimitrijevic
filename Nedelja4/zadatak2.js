@@ -42,8 +42,16 @@ function ispisivanjeRecepta(recept) {
 
 }
 
-ispisivanjeRecepta(recept0);
-ispisivanjeRecepta(recept1);
-ispisivanjeRecepta(recept2);
-ispisivanjeRecepta(recept3);
-ispisivanjeRecepta(recept4);
+var nizRecepata = [recept0, recept1, recept2, recept3, recept4];
+
+function ispisujePocetniIliLaki(x = nizRecepata) {
+    let duzinaNizaRecepata = x.length;
+    for (let n = 0; n < duzinaNizaRecepata; n++) {
+        if ((x[n].tezinaRecepta) == 'pocetni' || (x[n].tezinaRecepta) == 'lak') {
+            ispisivanjeRecepta(x[n]);
+            
+        }
+    }
+}
+
+ispisujePocetniIliLaki();
